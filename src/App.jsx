@@ -1,8 +1,12 @@
-import "./App.css";
-import Header from "./components/Header";
+import ThemeContextProvider from "./contexts/ThemeContext";
+import AppContent from "./AppContent";
 
 function App() {
-  return <Header></Header>;
+  return (
+    <ThemeContextProvider>
+      <AppContent />
+    </ThemeContextProvider>
+  );
 }
 
 export default App;
