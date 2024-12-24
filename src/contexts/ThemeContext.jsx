@@ -4,11 +4,14 @@ import { useState, createContext } from "react";
 export const ThemeContext = createContext();
 
 export default function ThemeContextProvider({ children }) {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
 
   function toggleTheme() {
     let newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
   }
 
   console.log("ThemeContextProvider çalıştı");

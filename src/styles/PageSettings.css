@@ -1,10 +1,10 @@
-.page-settings {
-  text-align: right;
-}
-
 h4 {
   /* border: 1px solid black; */
   display: inline;
   margin-left: 1rem;
   cursor: pointer;
+}
+
+.page-settings {
+  /* border: 1px solid black; */
 }
