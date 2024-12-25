@@ -1,10 +1,13 @@
-import ThemeContextProvider from "./contexts/ThemeContext";
+import { ThemeContextProvider } from "./contexts/ThemeContext";
 import AppContent from "./AppContent";
+import { LangContextProvider } from "./contexts/LangContext";
 
 function App() {
   return (
     <ThemeContextProvider>
-      <AppContent />
+      <LangContextProvider>
+        <AppContent />
+      </LangContextProvider>
     </ThemeContextProvider>
   );
 }
