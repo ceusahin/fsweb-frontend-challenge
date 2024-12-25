@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import "../styles/PageSettings.css";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { LangContext } from "../contexts/LangContext";
 
@@ -8,11 +7,11 @@ function PageSettings() {
   const { toggleLang, lang } = useContext(LangContext);
   return (
     <div className="page-settings italic font-bold text-right">
-      <h4 onClick={() => toggleTheme()}>
+      <h4 className="inline ml-4 cursor-pointer" onClick={() => toggleTheme()}>
         {theme === "light" ? "dark mode" : "light mode"}
       </h4>
-      <h4>|</h4>
-      <h4 onClick={() => toggleLang()}>
+      <h4 className="inline ml-4">|</h4>
+      <h4 className="inline ml-4 cursor-pointer" onClick={() => toggleLang()}>
         {lang === "eng" ? "TÜRKÇE'YE GEÇ" : "SWITCH TO ENGLISH"}
       </h4>
     </div>
