@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Main />
       <Skills />
-      <hr className="my-16 border-[#4338ca]" />
+      <hr className="my-16 border-[#BAB2E7]" />
     </div>
   );
 }
