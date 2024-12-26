@@ -6,7 +6,7 @@ export default function Profile() {
   const { profile } = useContext(DataContext);
   const { lang } = useContext(LangContext);
   return (
-    <>
+    <div className="mx-40">
       <h1 className="font-bold text-5xl mt-[6rem] dark:text-[#AEBCCF]">
         {lang == "tr" ? "Profil" : "Profile"}
       </h1>
@@ -16,13 +16,13 @@ export default function Profile() {
             {lang == "tr" ? "Profil" : "Profile"}
           </h3>
           <div className="flex gap-16 dark:text-white">
-            <div id="titles" className="font-bold text-xl">
+            <div id="titles" className="font-bold text-xl leading-9">
               <h4>{lang == "tr" ? "Doğum Tarihi" : "Date of Birth"}</h4>
               <h4>{lang == "tr" ? "Yaşadığı Şehir" : "Location"}</h4>
               <h4>{lang == "tr" ? "Eğitim Durumu" : "Education"}</h4>
               <h4>{lang == "tr" ? "Tercih Ettiği Rol" : "Preferred Role"}</h4>
             </div>
-            <div id="user-infos" className="text-xl ">
+            <div id="user-infos" className="text-xl leading-9">
               <h4>{profile.dateOfBirth}</h4>
               <h4>{profile.location}</h4>
               <h4>
@@ -41,6 +41,6 @@ export default function Profile() {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 }

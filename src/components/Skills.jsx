@@ -7,7 +7,7 @@ export default function Skills() {
   const { skills } = useContext(DataContext);
   // console.log(skills);
   return (
-    <>
+    <div className="mx-40">
       <h1 className="font-bold text-5xl mt-[14rem] dark:text-[#AEBCCF]">
         {lang == "tr" ? "Yetenekler" : "Skills"}
       </h1>
@@ -23,6 +23,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

@@ -7,7 +7,7 @@ function Header() {
   return (
     <>
       <PageSettings />
-      <div className="flex justify-between items-center my-12 ">
+      <div className="flex justify-between items-center my-12 mx-40">
         <div className="flex items-center justify-center w-14 h-14 p-3 rounded-full rotate-45 bg-[#EEEBFF] dark:bg-[#4731D3]">
           <span className="text-[#3730a3] text-3xl font-bold dark:text-[#8F88FF]">
             H

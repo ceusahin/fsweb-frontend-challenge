@@ -9,14 +9,18 @@ export default function Projects() {
   console.log(projects.techs);
 
   return (
-    <>
+    <div className="mx-40">
       <h1 className="font-bold text-5xl mt-[6rem] dark:text-[#AEBCCF]">
         {lang == "tr" ? "Projeler" : "Projects"}
       </h1>
       <div className="flex flex-row justify-between mt-10 mb-[6rem] flex-wrap gap-20">
         {projects.map((project) => (
           <div className=" w-[27rem] " key={project.id}>
-            <img src={project.cover} alt="" className="rounded-[0.3rem]" />
+            <img
+              src={project.cover}
+              alt=""
+              className="rounded-[0.3rem] w-[30rem] h-[15rem]"
+            />
             <h3 className="text-[#4338ca] font-bold text-3xl mb-8 mt-6 dark:text-[#B7AAFF]">
               {lang == "tr" ? project.title.tr : project.title.en}
             </h3>
@@ -28,7 +32,7 @@ export default function Projects() {
                 project.techs.map((tech) => (
                   <div
                     key={tech}
-                    className="bg-white px-6 py-2 text-[#3730A3] border-2 border-[#3730A3] font-bold rounded-xl text-sm mr-[0.4rem] dark:bg-[#B7AAFF]"
+                    className="bg-white px-6 py-2 text-[#3730A3] border-2 border-[#3730A3] font-bold rounded-xl text-sm mr-[0.4rem] dark:border-[#8F88FF] dark:text-[#8F88FF] dark:bg-[#383838]"
                   >
                     {tech.tech || tech}
                   </div>
@@ -53,6 +57,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

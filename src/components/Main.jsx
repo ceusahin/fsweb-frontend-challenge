@@ -7,7 +7,7 @@ export default function Main() {
   Original Ideas  Clear Results tkili Çözümler
   */
   return (
-    <div className="">
+    <div className="mx-40">
       <div className="flex flex-row items-center mt-16 mb-9 ">
         <div className="border-r-[100px] border border-[#4338ca] dark:border-[#B7AAFF]"></div>
         <span className="text-2xl text-[#4338ca] ml-4 dark:text-[#B7AAFF]">

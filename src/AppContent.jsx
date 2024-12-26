@@ -19,14 +19,14 @@ function App() {
     }
   }, [theme]);
   return (
-    <div className={`mx-40 my-6`}>
+    <div className={``}>
       <div className="">
         <Header />
         <Main />
         <Skills />
-        <hr className="my-16 border-[#BAB2E7]" />
+        <hr className="mx-40 my-16 border-[#BAB2E7]" />
         <Profile />
-        <hr className="my-16 border-[#BAB2E7]" />
+        <hr className="mx-40 my-16 border-[#BAB2E7]" />
         <Projects />
         <Footer />
       </div>

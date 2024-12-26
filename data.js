@@ -66,7 +66,7 @@ const data = {
     },
     {
       id: 3,
-      cover: "./src/media/witflix.png",
+      cover: "./src/media/potfolio.png",
       title: {
         tr: "Kişisel Web Sitem",
         en: "Personal Website",
@@ -81,7 +81,7 @@ const data = {
   ],
   profile: {
     dateOfBirth: "25.05.2001",
-    location: "asdsa",
+    location: "Ankara",
     education: {
       tr: "Kocaeli Üniversitesi, MMM.",
       en: "Kocaeli University, MME.",
