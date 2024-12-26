@@ -25,15 +25,21 @@ export default function Footer() {
         <a
           href="https://www.linkedin.com/in/hakonsahin/"
           className="text-black dark:text-[#AEBCCF] "
+          target="_blank"
         >
           Personal Blog
         </a>
-        <a href="https://github.com/ceusahin" className="text-green-600">
+        <a
+          href="https://github.com/ceusahin"
+          className="text-green-600"
+          target="_blank"
+        >
           Github
         </a>
         <a
           href="https://www.linkedin.com/in/hakonsahin/"
           className="text-blue-600"
+          target="_blank"
         >
           Linkedin
         </a>

@@ -13,13 +13,13 @@ export default function Projects() {
       <h1 className="font-bold text-5xl mt-[6rem] dark:text-[#AEBCCF]">
         {lang == "tr" ? "Projeler" : "Projects"}
       </h1>
-      <div className="flex flex-row justify-between mt-10 mb-[6rem] flex-wrap gap-20">
+      <div className="grid grid-cols-3 mt-10 mb-[6rem] gap-20">
         {projects.map((project) => (
-          <div className=" w-[27rem] " key={project.id}>
+          <div className=" w-[26rem] " key={project.id}>
             <img
               src={project.cover}
               alt=""
-              className="rounded-[0.3rem] w-[30rem] h-[15rem]"
+              className="rounded-[0.3rem] w-full h-[14rem]"
             />
             <h3 className="text-[#4338ca] font-bold text-3xl mb-8 mt-6 dark:text-[#B7AAFF]">
               {lang == "tr" ? project.title.tr : project.title.en}

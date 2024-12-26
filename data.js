@@ -1,3 +1,7 @@
+import witflixPic from "./src/media/witflix.png";
+import pizzaOrderPic from "./src/media/pizza-order.png";
+import portfolioPic from "./src/media/potfolio.png";
+
 const data = {
   skills: [
     {
@@ -36,7 +40,7 @@ const data = {
   projects: [
     {
       id: 1,
-      cover: "./src/media/pizza-order.png",
+      cover: pizzaOrderPic,
       title: {
         tr: "Pizza Sipariş Sistemi",
         en: "Pizza Order System",
@@ -51,7 +55,7 @@ const data = {
     },
     {
       id: 2,
-      cover: "./src/media/witflix.png",
+      cover: witflixPic,
       title: {
         tr: "Witflix",
         en: "Witflix",
@@ -66,7 +70,7 @@ const data = {
     },
     {
       id: 3,
-      cover: "./src/media/potfolio.png",
+      cover: portfolioPic,
       title: {
         tr: "Kişisel Web Sitem",
         en: "Personal Website",
