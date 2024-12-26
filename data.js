@@ -36,22 +36,22 @@ const data = {
   projects: [
     {
       id: 1,
-      cover: "",
+      cover: "./src/media/pizza-order.png",
       title: {
         tr: "Pizza Sipariş Sistemi",
         en: "Pizza Order System",
       },
       description: {
-        tr: "Kullanıcıların çevrimiçi olarak kolayca kendi isteklerine göre özelleştirdikleri pizzaları sipariş edebildiği, responsive tasarıma sahip bir web uygulaması.",
+        tr: "Kullanıcıların çevrimiçi olarak kolayca kendi isteklerine göre özelleştirdikleri pizzaları sipariş edebildiği, responsive uygun web uygulaması.",
         en: "A responsive web application where users can easily order pizzas customized to their preferences online.",
       },
       techs: ["react", "redux", "axios"],
       github: "https://github.com/ceusahin/fsweb-s8-challenge-pizza",
-      view: "",
+      view: "https://fsweb-s8-challenge-pizza-zeta.vercel.app/",
     },
     {
       id: 2,
-      cover: "",
+      cover: "./src/media/witflix.png",
       title: {
         tr: "Witflix",
         en: "Witflix",
@@ -60,9 +60,23 @@ const data = {
         tr: "Netflix kopyası bu proje, kullanıcıların kolay bir şekilde girip, istedikleri diziyi filmi seçip izleyebilme olanağı sağlamaktadır.",
         en: "This project is a Netflix clone that allows users to easily browse, select, and watch their favorite movies and shows.",
       },
-      techs: ["react", "redux", "axios"],
+      techs: ["html", "css", "javascript"],
       github: "https://github.com/ceusahin/wit1024-witflix",
       view: "https://wit1024-witflix.vercel.app/",
+    },
+    {
+      id: 3,
+      cover: "./src/media/witflix.png",
+      title: {
+        tr: "Kişisel Web Sitem",
+        en: "Personal Website",
+      },
+      description: {
+        tr: "Bu proje, benim hakkımda bilgiler içeren kişisel web sitemdir ve aynı zamanda geliştirme becerilerimi sergilemeyi amaçlamaktadır.",
+        en: "This project is my personal website that contains information about me and aims to showcase my development skills.",
+      },
+      techs: ["react", "tailwindcss", "vite"],
+      github: "",
     },
   ],
   profile: {
