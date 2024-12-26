@@ -24,8 +24,8 @@ export function ThemeContextProvider({ children }) {
     }
   }
 
-  console.log("ThemeContextProvider çalıştı");
-  console.log("theme:", theme);
+  // console.log("ThemeContextProvider çalıştı");
+  // console.log("theme:", theme);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>

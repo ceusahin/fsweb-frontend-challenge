@@ -10,7 +10,7 @@ export default function Profile() {
       <h1 className="font-bold text-5xl mt-[6rem] dark:text-[#AEBCCF]">
         {lang == "tr" ? "Profil" : "Profile"}
       </h1>
-      <section className="mb-10 mt-10 flex justify-between">
+      <section className="mb-[6rem] mt-10 flex justify-between">
         <div className="w-[55rem]">
           <h3 className="text-[#4338ca] font-bold text-3xl mb-6 dark:text-[#B7AAFF]">
             {lang == "tr" ? "Profil" : "Profile"}

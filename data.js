@@ -35,6 +35,7 @@ const data = {
   ],
   projects: [
     {
+      id: 1,
       cover: "",
       title: {
         tr: "Pizza Sipariş Sistemi",
@@ -49,6 +50,7 @@ const data = {
       view: "",
     },
     {
+      id: 2,
       cover: "",
       title: {
         tr: "Witflix",
@@ -60,26 +62,12 @@ const data = {
       },
       techs: ["react", "redux", "axios"],
       github: "https://github.com/ceusahin/wit1024-witflix",
-      view: "",
-    },
-    {
-      cover: "",
-      title: {
-        tr: "",
-        en: "",
-      },
-      description: {
-        tr: "",
-        en: "",
-      },
-      techs: "",
-      github: "",
-      view: "",
+      view: "https://wit1024-witflix.vercel.app/",
     },
   ],
   profile: {
     dateOfBirth: "25.05.2001",
-    location: "Ankara",
+    location: "asdsa",
     education: {
       tr: "Kocaeli Üniversitesi, MMM.",
       en: "Kocaeli University, MME.",

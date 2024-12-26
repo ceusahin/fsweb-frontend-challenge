@@ -3,6 +3,9 @@ import { LangContext } from "../contexts/LangContext";
 
 export default function Main() {
   const { lang } = useContext(LangContext);
+  /*
+  Original Ideas  Clear Results tkili Çözümler
+  */
   return (
     <div className="">
       <div className="flex flex-row items-center mt-16 mb-9 ">
@@ -14,9 +17,11 @@ export default function Main() {
       <main className="flex justify-between">
         <section className="w-[60rem]">
           <h1 className="font-bold text-8xl w-[55rem] dark:text-[#AEBCCF]">
-            {lang == "tr"
-              ? "Özgün Düşünce Etkili Çözümler"
-              : "Original Ideas Clear Results"}
+            {lang == "tr" ? "Özgün Düşünce" : "Original Ideas"}
+          </h1>
+          <br />
+          <h1 className="font-bold text-8xl w-[55rem] dark:text-[#AEBCCF]">
+            {lang == "tr" ? "Etkili Çözümler" : "Clear Results"}
           </h1>
           <p className="w-[46rem] my-12 text-2xl dark:text-white">
             {lang == "tr"
@@ -26,9 +31,9 @@ export default function Main() {
           <nav className="flex items-center">
             <a
               href="/"
-              className="w-[13rem] text-center mr-6 border border-[#3730A3] px-12 py-4 text-white bg-[#3730A3] text-2xl rounded-2xl dark:bg-[#E1E1FF] dark:border-none dark:text-black"
+              className="w-[14rem] text-center mr-6 border border-[#3730A3] px-12 py-4 text-white bg-[#3730A3] text-2xl rounded-2xl dark:bg-[#E1E1FF] dark:border-none dark:text-black"
             >
-              <button>{lang == "tr" ? "Beni kirala" : "Hire me"} </button>
+              <button>{lang == "tr" ? "Bana Ulaşın" : "Contact Me"} </button>
             </a>
             <a
               href="https://github.com/ceusahin"

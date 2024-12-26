@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import PageSettings from "./PageSettings";
+import { LangContext } from "../contexts/LangContext";
 
 function Header() {
+  const { lang } = useContext(LangContext);
   return (
     <>
       <PageSettings />
@@ -12,14 +15,14 @@ function Header() {
         </div>
         <div className="font-bold text-xl">
           <a className="ml-20 text-[#6B7280]" href="/">
-            Skills
+            {lang == "tr" ? "Yetenekler" : "Skills"}
           </a>
           <a className="ml-20 text-[#6B7280]" href="/">
-            Projects
+            {lang == "tr" ? "Projeler" : "Projects"}
           </a>
           <a className="ml-20" href="/">
             <button className="text-[#3730a3]  border border-[#3730a3] py-2 px-8 rounded-xl dark:bg-white">
-              Hire me
+              {lang == "tr" ? "Bana Ulaşın" : "Contact Me"}
             </button>
           </a>
         </div>

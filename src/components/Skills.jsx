@@ -5,7 +5,7 @@ import { LangContext } from "../contexts/LangContext";
 export default function Skills() {
   const { lang } = useContext(LangContext);
   const { skills } = useContext(DataContext);
-  console.log(skills);
+  // console.log(skills);
   return (
     <>
       <h1 className="font-bold text-5xl mt-[14rem] dark:text-[#AEBCCF]">

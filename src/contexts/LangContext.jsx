@@ -14,8 +14,8 @@ export function LangContextProvider({ children }) {
     localStorage.setItem("lang", newLang);
   }
 
-  console.log("LangContextProvider çalıştı");
-  console.log("language:", lang);
+  // console.log("LangContextProvider çalıştı");
+  // console.log("language:", lang);
 
   return (
     <LangContext.Provider value={{ lang, setLang, toggleLang }}>
