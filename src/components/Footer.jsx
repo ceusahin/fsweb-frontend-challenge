@@ -22,13 +22,19 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex ml-[40rem] mt-[14rem] gap-12 font-bold">
-        <a href="" className="text-black dark:text-[#AEBCCF] ">
+        <a
+          href="https://www.linkedin.com/in/hakonsahin/"
+          className="text-black dark:text-[#AEBCCF] "
+        >
           Personal Blog
         </a>
-        <a href="" className="text-green-600">
+        <a href="https://github.com/ceusahin" className="text-green-600">
           Github
         </a>
-        <a href="" className="text-blue-600">
+        <a
+          href="https://www.linkedin.com/in/hakonsahin/"
+          className="text-blue-600"
+        >
           Linkedin
         </a>
       </div>
