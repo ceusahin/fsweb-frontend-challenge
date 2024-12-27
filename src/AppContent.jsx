@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   const { theme } = useContext(ThemeContext);
+
   useEffect(() => {
     const html = document.documentElement;
     if (theme === "dark") {
@@ -18,18 +19,17 @@ function App() {
       html.classList.remove("dark");
     }
   }, [theme]);
+
   return (
-    <div className={``}>
-      <div className="">
-        <Header />
-        <Main />
-        <Skills />
-        <hr className="mx-40 my-16 border-[#BAB2E7]" />
-        <Profile />
-        <hr className="mx-40 my-16 border-[#BAB2E7]" />
-        <Projects />
-        <Footer />
-      </div>
+    <div className="max-500:overflow-x-hidden">
+      <Header />
+      <Main />
+      <Skills />
+      <hr className="mx-40 my-16 border-[#BAB2E7]" />
+      <Profile />
+      <hr className="mx-40 my-16 border-[#BAB2E7]" />
+      <Projects />
+      <Footer />
     </div>
   );
 }
