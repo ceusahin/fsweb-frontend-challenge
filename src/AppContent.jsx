@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -20,8 +21,22 @@ function App() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    toast.success("Hoşgeldiniz!", {
+      position: "top-left",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+    });
+  }, []);
+
   return (
     <div className="max-500:overflow-x-hidden">
+      <ToastContainer
+        theme={theme == "dark" ? "light" : "dark"}
+        transition={Bounce}
+      />
       <Header />
       <Main />
       <Skills />
