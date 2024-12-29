@@ -6,7 +6,7 @@ export default function Profile() {
   const { profile } = useContext(DataContext);
   const { lang } = useContext(LangContext);
   return (
-    <div className="mx-40 max-500:mx-10">
+    <div id="profile" className="mx-40 max-500:mx-10">
       <h1 className="font-bold text-5xl mt-[6rem] dark:text-[#AEBCCF] max-500:text-center ">
         {lang == "tr" ? "Profil" : "Profile"}
       </h1>

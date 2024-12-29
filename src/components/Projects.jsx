@@ -9,7 +9,7 @@ export default function Projects() {
   // console.log(projects.techs);
 
   return (
-    <div className="mx-40 max-500:mx-10 max-500:text-center">
+    <div id="projects" className="mx-40 max-500:mx-10 max-500:text-center">
       <h1 className="font-bold text-5xl mt-[6rem] dark:text-[#AEBCCF]">
         {lang == "tr" ? "Projeler" : "Projects"}
       </h1>

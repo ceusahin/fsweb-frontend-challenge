@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import PageSettings from "./PageSettings";
 import { LangContext } from "../contexts/LangContext";
+import NavLink from "./NavLink";
 
 function Header() {
   const { lang } = useContext(LangContext);
@@ -14,20 +15,20 @@ function Header() {
           </span>
         </div>
         <div className="font-bold text-xl">
-          <a className="ml-20 max-500:ml-6 text-[#6B7280]" href="/">
+          <NavLink href="#profile">
             {lang == "tr" ? "Profil" : "Profile"}
-          </a>
-          <a className="ml-20 max-500:ml-6 text-[#6B7280]" href="/">
+          </NavLink>
+          <NavLink href="#skills">
             {lang == "tr" ? "Yetenekler" : "Skills"}
-          </a>
-          <a className="ml-20 max-500:ml-6 text-[#6B7280]" href="/">
+          </NavLink>
+          <NavLink href="#projects">
             {lang == "tr" ? "Projeler" : "Projects"}
-          </a>
-          <a className="ml-20 max-500:ml-12" href="/">
+          </NavLink>
+          <NavLink className="ml-20 max-500:ml-12" href="/">
             <button className="text-[#3730a3]  border border-[#3730a3] py-2 px-8 max-500:px-6 rounded-xl dark:bg-white max-500:hidden">
               {lang == "tr" ? "Bana Ulaşın" : "Contact Me"}
             </button>
-          </a>
+          </NavLink>
         </div>
       </div>
     </>
