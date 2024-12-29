@@ -40,7 +40,7 @@ export default function Main() {
               target="_blank"
             >
               <button className="flex items-center ">
-                <i className="fa-brands fa-github fa-xl pr-3" />
+                <i className="fa-brands fa-github fa-xl pr-3 max-500:pl-[4.5rem]" />
                 <p>Github</p>
               </button>
             </a>
@@ -50,7 +50,7 @@ export default function Main() {
               className="text-[#3730A3] max-500:mt-6 max-500:w-[26rem] max-500:mx-auto mr-14 max-500:mr-0 border-[#3730A3] px-9 py-4 border text-2xl rounded-2xl dark:bg-[#383838] dark:border-[#E1E1FF] dark:text-[#E1E1FF]"
             >
               <button className="flex items-center">
-                <i className="fa-brands fa-linkedin-in fa-xl pr-3" />
+                <i className="fa-brands fa-linkedin-in fa-xl pr-3 max-500:pl-[4.4rem]" />
                 <p>Linkedin</p>
               </button>
             </a>
