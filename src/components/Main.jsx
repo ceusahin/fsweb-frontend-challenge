@@ -10,7 +10,7 @@ export default function Main() {
       <div className="flex flex-row items-center mt-16 mb-9 max-500:mb-16 max-500:mt-10 max-500:w-[22rem] max-500:mx-auto">
         <div className="border-r-[100px] border border-[#4338ca] dark:border-[#B7AAFF]"></div>
         <span className="text-2xl text-[#4338ca] ml-4 dark:text-[#B7AAFF]">
-          Hakan
+          Hakan Şahin
         </span>
       </div>
       <main className="flex justify-between max-500:flex-col-reverse">
