@@ -9,21 +9,25 @@ export default function Projects() {
   // console.log(projects.techs);
 
   return (
-    <div id="projects" className="mx-40 max-500:mx-10 max-500:text-center">
+    <div id="projects" className="mx-40 max-500:text-center max-500:mx-0">
       <h1 className="font-bold text-5xl mt-[6rem] dark:text-[#AEBCCF]">
         {lang == "tr" ? "Projeler" : "Projects"}
       </h1>
       <div className="grid grid-cols-3 max-500:grid-cols-1 mt-10 mb-[6rem] gap-20 max-500:mt-0">
         {projects.map((project) => (
           <div className=" w-[26rem] max-500:mt-20" key={project.id}>
-            <img src={project.cover} alt="" className="rounded-[0.3rem]" />
+            <img
+              src={project.cover}
+              alt=""
+              className="rounded-[0.3rem] max-500:w-[22rem] max-500:mx-auto"
+            />
             <h3 className="text-[#4338ca] font-bold text-3xl mb-8 mt-6 dark:text-[#B7AAFF]">
               {lang == "tr" ? project.title.tr : project.title.en}
             </h3>
-            <p className="text-xl dark:text-white mt-[-1rem]">
+            <p className="text-xl dark:text-white mt-[-1rem] max-500:w-[22rem] max-500:mx-auto">
               {lang == "tr" ? project.description.tr : project.description.en}
             </p>
-            <div className="flex flex-row flex-wrap gap-y-1.5 max-500:justify-center mt-6">
+            <div className="flex flex-row flex-wrap gap-y-1.5 max-500:justify-center mt-6 max-500:w-[22rem] max-500:mx-auto">
               {Array.isArray(project.techs) &&
                 project.techs.map((tech) => (
                   <div

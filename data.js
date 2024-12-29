@@ -103,8 +103,8 @@ const data = {
     dateOfBirth: "25.05.2001",
     location: "Ankara",
     education: {
-      tr: "Kocaeli Üniversitesi, MMM.",
-      en: "Kocaeli University, MME.",
+      tr: "Kocaeli Üniversitesi",
+      en: "Kocaeli University",
     },
     preferredRole: "Frontend, UI",
     about: {

@@ -6,7 +6,7 @@ export default function Main() {
   const { lang } = useContext(LangContext);
 
   return (
-    <div className="mx-40 max-500:mx-10">
+    <div className="mx-40 max-500:overflow-x-hidden max-500:w-full">
       <div className="flex flex-row items-center mt-16 mb-9 max-500:mb-16">
         <div className="border-r-[100px] border border-[#4338ca] dark:border-[#B7AAFF]"></div>
         <span className="text-2xl text-[#4338ca] ml-4 dark:text-[#B7AAFF]">

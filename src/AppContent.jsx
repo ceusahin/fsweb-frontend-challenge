@@ -34,7 +34,7 @@ function App() {
   }, []);
 
   return (
-    <div className="max-500:overflow-x-hidden">
+    <div className="w-full overflow-x-hidden">
       <ToastContainer
         theme={theme == "dark" ? "light" : "dark"}
         transition={Bounce}
