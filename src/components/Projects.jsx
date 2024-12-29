@@ -23,7 +23,7 @@ export default function Projects() {
             <p className="text-xl dark:text-white mt-[-1rem]">
               {lang == "tr" ? project.description.tr : project.description.en}
             </p>
-            <div className="flex flex-row max-500:justify-center mt-6">
+            <div className="flex flex-row flex-wrap gap-y-1.5 max-500:justify-center mt-6">
               {Array.isArray(project.techs) &&
                 project.techs.map((tech) => (
                   <div
