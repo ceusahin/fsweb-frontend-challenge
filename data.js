@@ -94,7 +94,7 @@ const data = {
         tr: "Bu proje, oyuncuların aynı tuval üzerinde gerçek zamanlı olarak pixel art çalışmaları yapabildiği çok oyunculu bir web oyunudur.",
         en: "This project is a multiplayer web game where players can create pixel art together on the same canvas in real-time.",
       },
-      techs: ["typescript", "react", "vite", "socket.io", "tailwindcss"],
+      techs: ["typescript", "react", "vite", "socket.io", "tailwindcss", "ai"],
       github: "https://github.com/ceusahin/multiplayer-pixel-game",
       view: "https://multiplayer-pixel-game.vercel.app/",
     },
