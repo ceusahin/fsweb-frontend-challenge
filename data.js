@@ -1,6 +1,7 @@
 import witflixPic from "./src/media/witflix.png";
 import pizzaOrderPic from "./src/media/pizza-order.png";
 import portfolioPic from "./src/media/potfolio.png";
+import pixelGamePic from "./src/media/pixelgame.png";
 
 const data = {
   skills: [
@@ -79,8 +80,23 @@ const data = {
         tr: "Bu proje, benim hakkımda bilgiler içeren kişisel web sitemdir ve aynı zamanda geliştirme becerilerimi sergilemeyi amaçlamaktadır.",
         en: "This project is my personal website that contains information about me and aims to showcase my development skills.",
       },
-      techs: ["react", "tailwindcss", "vite"],
+      techs: ["react", "javascript", "tailwindcss", "vite", "responsive"],
       github: "",
+    },
+    {
+      id: 4,
+      cover: pixelGamePic,
+      title: {
+        tr: "Çok Oyunculu Piksel Oyunu",
+        en: "Multiplayer Pixel Game",
+      },
+      description: {
+        tr: "Bu proje, oyuncuların aynı tuval üzerinde gerçek zamanlı olarak pixel art çalışmaları yapabildiği çok oyunculu bir web oyunudur.",
+        en: "This project is a multiplayer web game where players can create pixel art together on the same canvas in real-time.",
+      },
+      techs: ["typescript", "react", "vite", "socket.io", "tailwindcss"],
+      github: "https://github.com/ceusahin/multiplayer-pixel-game",
+      view: "https://multiplayer-pixel-game.vercel.app/",
     },
   ],
   profile: {
