@@ -8,6 +8,8 @@ import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import { Bounce, toast, ToastContainer } from "react-toastify";
+import { Routes, Route } from "react-router-dom";
+import Contact from "./components/Contact";
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -38,12 +40,22 @@ function App() {
         transition={Bounce}
       />
       <Header />
-      <Main />
-      <Skills />
-      <hr className="mx-40 my-16 border-[#BAB2E7]" />
-      <Profile />
-      <hr className="mx-40 my-16 border-[#BAB2E7]" />
-      <Projects />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Main />
+              <Skills />
+              <hr className="mx-40 my-16 border-[#BAB2E7]" />
+              <Profile />
+              <hr className="mx-40 my-16 border-[#BAB2E7]" />
+              <Projects />
+            </>
+          }
+        />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </div>
   );

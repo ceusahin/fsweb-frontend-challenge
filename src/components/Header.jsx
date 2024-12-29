@@ -2,6 +2,7 @@ import { useContext } from "react";
 import PageSettings from "./PageSettings";
 import { LangContext } from "../contexts/LangContext";
 import NavLink from "./NavLink";
+import { Link } from "react-router-dom";
 
 function Header() {
   const { lang } = useContext(LangContext);
@@ -24,10 +25,12 @@ function Header() {
           <NavLink href="#projects">
             {lang == "tr" ? "Projeler" : "Projects"}
           </NavLink>
-          <NavLink className="ml-20 max-500:ml-12" href="/">
-            <button className="text-[#3730a3]  border border-[#3730a3] py-2 px-8 max-500:px-6 rounded-xl dark:bg-white max-500:hidden">
-              {lang == "tr" ? "Bana Ulaşın" : "Contact Me"}
-            </button>
+          <NavLink className="ml-20 max-500:ml-12">
+            <Link to="/contact">
+              <button className="text-[#3730a3] border border-[#3730a3] py-2 px-8 max-500:px-6 rounded-xl dark:bg-white max-500:hidden">
+                {lang == "tr" ? "Bana Ulaşın" : "Contact Me"}
+              </button>
+            </Link>
           </NavLink>
         </div>
       </div>

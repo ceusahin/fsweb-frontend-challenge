@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { LangContext } from "../contexts/LangContext";
+import { Link } from "react-router-dom";
 
 export default function Main() {
   const { lang } = useContext(LangContext);
@@ -27,12 +28,12 @@ export default function Main() {
               : "  Hi, I'm Hakan. I'm a full-stack software developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Lets shake hands with me."}
           </p>
           <nav className="flex items-center max-500:flex-wrap max-500:w-[30rem]">
-            <a
-              href="/"
+            <Link
+              to="/contact"
               className="max-500:mt-8 max-500:mr-0 max-500:mb-6 w-[14rem] text-center mr-6 border border-[#3730A3] px-12 py-4 text-white bg-[#3730A3] text-2xl rounded-2xl dark:bg-[#E1E1FF] dark:border-none dark:text-black max-500:w-[26rem]"
             >
-              <button>{lang == "tr" ? "Bana Ulaşın" : "Contact Me"} </button>
-            </a>
+              {lang == "tr" ? "Bana Ulaşın" : "Contact Me"}
+            </Link>
             <a
               href="https://github.com/ceusahin"
               className="text-[#3730A3] mr-6  border-[#3730A3] px-9 py-4 border text-2xl rounded-2xl dark:bg-[#383838] dark:border-[#E1E1FF] dark:text-[#E1E1FF]"
