@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Axios from "./components/Axios";
 import { Bounce, toast, ToastContainer } from "react-toastify";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
@@ -57,6 +58,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <Axios />
     </div>
   );
 }
