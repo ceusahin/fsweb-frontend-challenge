@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { LangContext } from "../contexts/LangContext";
 import { Link } from "react-router-dom";
+import profilePic from "../media/pp.jpg";
 
 export default function Main() {
   const { lang } = useContext(LangContext);
@@ -59,7 +60,7 @@ export default function Main() {
         <section className="">
           <img
             className="object-contain rounded-l-3xl w-full h-[28rem] max-500:w-[22rem] max-500:mx-2"
-            src="https://picsum.photos/700/500"
+            src={profilePic}
             alt=""
           />
         </section>
