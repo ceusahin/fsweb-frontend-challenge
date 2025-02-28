@@ -29,12 +29,44 @@ const data = {
         tr: "Java, platformdan bağımsız uygulamalar geliştirmek için kullanılan popüler bir nesne yönelimli programlama dilidir.",
       },
     },
+    {
+      id: 4,
+      title: "Java Spring",
+      description: {
+        en: "Java Spring is a powerful, flexible, and modular Java framework used for developing modern web and microservice applications.",
+        tr: "Java Spring, güçlü, esnek ve modüler yapısıyla modern web ve mikro hizmet uygulamaları geliştirmek için kullanılan bir Java framework'üdür.",
+      },
+    },
+    {
+      id: 5,
+      title: "PostgreSQL",
+      description: {
+        en: "PostgreSQL is a powerful, open-source, and extensible relational database management system.",
+        tr: "PostgreSQL, güçlü, açık kaynaklı ve genişletilebilir bir ilişkisel veritabanı yönetim sistemidir.",
+      },
+    },
+    {
+      id: 6,
+      title: "Git",
+      description: {
+        en: "Git is a popular distributed version control system that simplifies code management.",
+        tr: "Git, dağıtık versiyon kontrolü sağlayan ve kod yönetimini kolaylaştıran popüler bir sistemdir.",
+      },
+    },
     // {
-    //   id: 4,
-    //   title: "MySQL",
+    //   id: 7,
+    //   title: "REST API",
     //   description: {
-    //     en: "Java is a popular object-oriented programming language used for developing platform-independent applications.",
-    //     tr: "Java, platformdan bağımsız uygulamalar geliştirmek için kullanılan popüler bir nesne yönelimli programlama dilidir.",
+    //     en: "REST API is a web service architecture that standardizes communication between clients and servers using the HTTP protocol.",
+    //     tr: "REST API, istemci ve sunucu arasındaki iletişimi HTTP protokolü üzerinden standart hale getiren bir web servis mimarisidir.",
+    //   },
+    // },
+    // {
+    //   id: 8,
+    //   title: "Microservice",
+    //   description: {
+    //     en: "Microservice architecture is a software design approach that simplifies the development of large and complex applications by dividing them into independent and scalable small services.",
+    //     tr: "Mikro hizmet mimarisi, büyük ve karmaşık uygulamaları bağımsız ve ölçeklenebilir küçük hizmetlere bölerek geliştirmeyi kolaylaştıran bir yazılım mimarisidir.",
     //   },
     // },
   ],
@@ -106,7 +138,7 @@ const data = {
       tr: "Kocaeli Üniversitesi",
       en: "Kocaeli University",
     },
-    preferredRole: "Frontend, UI",
+    preferredRole: "Full-Stack Development",
     about: {
       tr: "Yeni insanlarla tanışmayı, sorumluluklar üstlenmeyi, zorluklarla yüzleşip çözümsüz bırakmayan, yeni deneyimler kazanmayı ve bilhassa öğrenmeyi seven yazılım geliştiricisiyim.",
       en: "Software developer who loves to meet new people, can take responsibility, open to new experiences and challenges.",

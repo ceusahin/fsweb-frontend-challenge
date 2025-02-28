@@ -40,6 +40,7 @@ function App() {
         theme={theme == "dark" ? "light" : "dark"}
         transition={Bounce}
       />
+      <Axios />
       <Header />
       <Routes>
         <Route

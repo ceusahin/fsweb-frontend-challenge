@@ -1,6 +1,5 @@
 import { toast } from "react-toastify";
 import axios from "axios";
-import { useEffect } from "react";
 
 export default function Request() {
   const user = {
@@ -11,16 +10,27 @@ export default function Request() {
     pantone_value: "",
   };
 
-  useEffect(() => {
+  function axiosRequest() {
     axios
       .post("https://reqres.in/api/workintech", user)
-      .then((response) => {
-        console.log(response.data);
-        toast.success("Post Request is successful.");
+      .then((res) => {
+        console.log(res);
+        toast.success("User added successfully!");
       })
-      .catch((error) => {
-        console.log(error.message);
-        toast.error(error.message);
-      }, []);
-  });
+      .catch((err) => {
+        console.log(err);
+        toast.error("Error adding user!");
+      });
+  }
+
+  return (
+    <div>
+      <button
+        className="dark:text-white mx-10 mt-10 hidden"
+        onClick={axiosRequest}
+      >
+        Fake Axios Request
+      </button>
+    </div>
+  );
 }
