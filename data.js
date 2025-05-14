@@ -2,6 +2,7 @@ import witflixPic from "./src/media/witflix.png";
 import pizzaOrderPic from "./src/media/pizza-order.png";
 import portfolioPic from "./src/media/potfolio.png";
 import pixelGamePic from "./src/media/pixelgame.png";
+import zwitterPic from "./src/media/zwitter.png";
 
 const data = {
   skills: [
@@ -129,6 +130,30 @@ const data = {
       techs: ["typescript", "react", "vite", "socket.io", "tailwindcss", "ai"],
       github: "https://github.com/ceusahin/multiplayer-pixel-game",
       view: "https://multiplayer-pixel-game.vercel.app/",
+    },
+    {
+      id: 5,
+      cover: zwitterPic,
+      title: {
+        tr: "Zwitter",
+        en: "Zwitter",
+      },
+      description: {
+        tr: "Twitter kopyası projemde, kullanıcılar kayıt olabilir, zweet atabilir, beğeni ve rezweet işlemleri yapabilir, diğer kullanıcıları takip edebilir. Tam kapsamlı bir full-stack proje olarak frontend, backend ve veritabanı teknolojilerini bir araya getirir.",
+        en: "This project is a social media application that replicates the core features of Twitter. Users can register, post tweets, like and retweet posts, and follow other users. It is a full-stack project combining frontend, backend, and database technologies.",
+      },
+      techs: [
+        "react",
+        "javascript",
+        "java",
+        "springboot",
+        "postgresql",
+        "responsive",
+        "authentication",
+        "api integration",
+      ],
+      github: "https://github.com/ceusahin/fsweb-zwitter-frontend",
+      view: "https://fsweb-zwitter.vercel.app/",
     },
   ],
   profile: {
